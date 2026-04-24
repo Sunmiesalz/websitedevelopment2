@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotBeans</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgba(255, 153, 0, 0.959);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image/Black_And_White_Modern_Initial_PB_Consulting_Logo_Design-removebg-preview.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <section class="heroOne">
+        <div class="container">
+            <h1>Start Your Web Development Career</h1>
+
+            <p>Learn HTML, CSS, JavaScript and modern development skills.</p>
+            
+            <div class="hero-buttons">
+            <a href="https://www.linkedin.com/jobs/web-development-jobs-london"><button class="btn-primary">Explore Courses</button></a>
+            <a href="https://www.reed.co.uk/courses/free?kl_campaign=650132294&msclkid=074d8873c7131981adf4e1dd2bba8de7&utm_source=bing&utm_medium=cpc&utm_campaign=Courses%20%7C%20Search%20%7C%20Generics%20%7C%20Free%20Courses%20%7C%20Bing&utm_term=free%20online%20courses&utm_content=Free%20Courses%20%7C%20Pure"><button class="btn-secondary">Learn More</button></a>
+            
+        </div>
+      </section>
+    <section class="container">
+        <h2>Enhance Your Sustainable Development Skills</h2>
+        <p>
+            We encourage continuous learning. Below are recommended courses
+            that focus on performance optimisation, accessibility and sustainable web practices.
+        </p>
+    
+        <ul class="course-list">
+            <li>
+                <strong>Green Web Foundation – Sustainable Web Design</strong><br>
+                Learn how to reduce digital carbon footprints and build eco-friendly websites.
+            </li>
+            <li>
+                <strong>Responsive Web Design Certification</strong><br>
+                Master mobile-first development and performance optimisation.
+            </li>
+            <li>
+                <strong>Web Accessibility Standards</strong><br>
+                Understand inclusive design and WCAG accessibility guidelines.
+            </li>
+        </ul>
+    </section>
+    
+    <section class="courses">
+   
+<h2>Popular Courses</h2>
+<aside>
+<div class="course-container">
+<div class="yard">
+<h3>Web Development</h3>
+<p>Learn how to build websites using HTML, CSS and JavaScript.</p>
+<a href="https://www.pitman-training.com/our-courses/software-web-development/web-development-courses/"><button class="card-btn">View Course</button></a>
+</div>
+
+<div class="yard">
+<h3>Cyber Security</h3>
+<p>Learn how to protect systems and networks from cyber threats.</p>
+<a href="https://www.coursera.org/courses?query=cybersecurity&msockid=133903d671a660ff2b0c14c170d36152"><button class="card-btn">View Course</button></a>
+</div>
+
+<div class="yard">
+<h3>Data Analytics</h3>
+<p>Understand how to analyse data using modern tools.</p>
+<a href="https://www.coursera.org/articles/data-analytics?msockid=133903d671a660ff2b0c14c170d36152"><button class="card-btn">View Course</button></a>
+</div>
+
+ </aside>
+</section>
+<section class="filter-section">
+  <div class="container filter-box">
+    <input type="text" id="searchInput" placeholder="Search courses..." />
+   
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="frontend">Front-End</option>
+      <option value="backend">Back-End</option>
+      <option value="design">Design</option>
+    </select>
+  </div>
+</section>
+<section class="courses-section">
+    <div class="container">
+      <h3>Available Courses</h3>
+ 
+      <div class="courses-grid" id="coursesGrid">
+        <div class="course-card" data-category="frontend">
+          <h4>HTML & CSS Fundamentals</h4>
+          <p class="level">Beginner</p>
+          <p>
+            Learn how to create web pages using HTML and style them with CSS.
+          </p>
+          <a href=""><button>Read More</button></a>
+        </div>
+ 
+        <div class="course-card" data-category="frontend">
+          <h4>JavaScript Essentials</h4>
+          <p class="level">Beginner to Intermediate</p>
+          <p>
+            Understand variables, functions, events, and DOM manipulation.
+          </p>
+          <a href=""><button>Read More</button></a>
+        </div>
+ 
+        <div class="course-card" data-category="design">
+          <h4>UI/UX Design Basics</h4>
+          <p class="level">Beginner</p>
+          <p>
+            Discover how to design user-friendly and visually attractive websites.
+          </p>
+          <a href=""><button>Read More</button></a>
+        </div>
+ 
+        <div class="course-card" data-category="backend">
+          <h4>Introduction to Databases</h4>
+          <p class="level">Intermediate</p>
+          <p>
+            Learn how databases store information and support web applications.
+          </p>
+          <a href=""><button>Read More</button></a>
+        </div>
+ 
+        <div class="course-card" data-category="backend">
+          <h4>PHP & MySQL Development</h4>
+          <p class="level">Intermediate</p>
+          <p>
+            Build dynamic websites using server-side programming and databases.
+          </p>
+          <a href=""><button>Read More</button></a>
+        </div>
+ 
+        <div class="course-card" data-category="frontend">
+          <h4>Responsive Web Design</h4>
+          <p class="level">Intermediate</p>
+          <p>
+            Create websites that look professional on desktop, tablet, and mobile.
+          </p>
+          <a href=""><button>Read More</button></a>
+        </div>
+      </div>
+ 
+      <p id="noResults" class="no-results">No courses found.</p>
+    </div>
+  </section>
+ 
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h3>Start Your Learning Journey Today</h3>
+      <p>
+        Join our courses and develop the skills needed for a successful career
+        in web development.
+      </p>
+      <a href="apply.html" class="cta-btn">Apply Now</a>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-top">
+
+        <div class="footer-left">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="jobs.html">Jobs</a></p>
+          <p><a href="courses.html">Courses</a></p>
+          <p><a href="register.html">Register</a></p>
+        </div>
+    
+        <div class="footer-right">
+          <p>Email: hello@hotbeansweb.com</p>
+          <p>Phone: +44 123 456 789</p>
+          <p>LinkedIn GitHub</p>
+        </div>
+    
+      </div>
+    
+      <p class="footer-bottom">© 2026 Hot Beans Web</p>
+  </footer>
+
+
+    <script>
+    // Select the search input box from the HTML using its ID
+    const searchInput = document.getElementById("searchInput");
+     
+    // Select the category dropdown menu from the HTML using its ID
+    const categoryFilter = document.getElementById("categoryFilter");
+     
+    // Select ALL course cards from the page using their class name
+    // querySelectorAll returns a list of elements
+    const cards = document.querySelectorAll(".course-card");
+     
+     
+    // When the user types inside the search box,
+    // run the filterCourses function
+    searchInput.addEventListener("keyup", filterCourses);
+     
+     
+    // When the user changes the category dropdown selection,
+    // run the same filterCourses function
+    categoryFilter.addEventListener("change", filterCourses);
+     
+     
+     
+    // Create a function called filterCourses
+    // This function filters which course cards should appear
+    function filterCourses() {
+     
+      // Get the text typed by the user in the search box
+      // Convert it to lowercase so matching becomes easier
+      const text = searchInput.value.toLowerCase();
+     
+     
+      // Get the selected category from the dropdown menu
+      const category = categoryFilter.value;
+     
+     
+      // Go through each course card one by one
+      cards.forEach(function(card) {
+     
+        // Find the title inside each course card (the h4 heading)
+        // Convert it to lowercase for easier comparison
+        const title = card.querySelector("h4").textContent.toLowerCase();
+     
+     
+        // Get the category stored inside the course card
+        // Example: frontend, backend, design
+        const cardCategory = card.dataset.category;
+     
+     
+        // Check TWO conditions:
+        // 1) Does the course title include the typed text?
+        // 2) Does the selected category match the card category?
+        // OR is the category set to "all"?
+        if (
+          title.includes(text) &&
+          (category === "all" || category === cardCategory)
+        ) {
+     
+          // If BOTH conditions are true,
+          // show the course card
+          card.style.display = "block";
+     
+        } else {
+     
+          // Otherwise hide the course card
+          card.style.display = "none";
+     
+        }
+     
+      });
+     
+    } 
+  </script>
+</body>
+</html>
